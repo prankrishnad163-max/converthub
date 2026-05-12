@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO -->
+  <title>ConvertHub — Free Online PDF Converter, Image Compressor & Photo Tools | No Watermark</title>
+  <meta name="description" content="Convert PDF to Word, JPG to PDF, compress images & PDFs, create passport photos, crop images — 100% free, no watermark, no signup required. Fast browser-based processing." />
+  <meta name="keywords" content="free pdf converter, image to pdf, pdf to word, compress image online, passport photo maker, crop image online, word to pdf, pdf to jpg, ppt to pdf, image compressor, pdf compressor, photo tools, file converter, no watermark" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="ConvertHub" />
+  <link rel="canonical" href="https://converthub.tools/" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ConvertHub — Free Online File Converter & Image Tools" />
+  <meta property="og:description" content="10+ free tools: PDF converter, image compressor, passport photo maker, image cropper. No watermark, no signup." />
+  <meta property="og:url" content="https://converthub.tools/" />
+  <meta property="og:site_name" content="ConvertHub" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ConvertHub — Free Online File Converter & Image Tools" />
+  <meta name="twitter:description" content="Convert, compress, and edit files instantly — 100% free, no watermark." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  
+  <!-- Fonts - preload for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ConvertHub",
+    "url": "https://converthub.tools/",
+    "description": "Free online file converter and image toolkit. Convert PDF, Word, PPT, compress images, create passport photos, crop images. No watermark, no signup required.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Photo to PDF Converter",
+      "PDF to Image Converter",
+      "Word to PDF Converter",
+      "PDF to Word Converter",
+      "PPT to PDF Converter",
+      "PDF to PPT Converter",
+      "Image Compressor",
+      "PDF Compressor",
+      "Passport Photo Maker",
+      "Image Cropper"
+    ]
+  }
+  </script>
+  
+  <!-- FAQ Schema for Featured Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How to convert image to PDF for free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upload your images to ConvertHub's Photo to PDF tool, arrange them in order, and download your PDF instantly. No watermark, no signup required. All processing happens in your browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to compress PDF to a specific size?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use ConvertHub's PDF Compressor to reduce your PDF file size. Choose your target size (100KB, 200KB, 500KB, or custom) and download the compressed file instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to make a passport size photo online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upload your photo to ConvertHub's Passport Photo Maker, select your country's standard size, adjust the crop, choose a background color, and download a print-ready sheet."
+        }
+      }
+    ]
+  }
+  </script>
+  
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-gradient"></div>
+  <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="/" class="logo" id="logo" aria-label="ConvertHub Home">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6366f1"/>
+              <stop offset="50%" stop-color="#06b6d4"/>
+              <stop offset="100%" stop-color="#8b5cf6"/>
+            </linearGradient>
+          </defs>
+          <circle cx="20" cy="20" r="18" stroke="url(#logoGrad)" stroke-width="2.5" fill="none"/>
+          <path d="M14 16l6-6 6 6" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 10v14" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M26 24l-6 6-6-6" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">Convert<span class="logo-highlight">Hub</span></span>
+      </a>
+      <nav class="header-nav" id="header-nav">
+        <a href="#tools" class="nav-link">Tools</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        100% Free · No Watermark · No Signup
+      </div>
+      <h1 class="hero-title">
+        Convert, Compress &<br/>
+        <span class="gradient-text">Transform</span> Any File
+      </h1>
+      <p class="hero-subtitle">
+        10+ powerful tools for PDF, images, documents — all processing happens in your browser. 
+        Your files never leave your device.
+      </p>
+      <a href="#tools" class="hero-cta" id="hero-cta">
+        <span>Explore Tools</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+      </a>
+    </div>
+    <div class="hero-visual" id="hero-visual">
+      <div class="floating-card fc-1">
+        <div class="fc-icon">📄</div>
+        <div class="fc-label">PDF</div>
+      </div>
+      <div class="floating-card fc-2">
+        <div class="fc-icon">🖼️</div>
+        <div class="fc-label">Image</div>
+      </div>
+      <div class="floating-card fc-3">
+        <div class="fc-icon">📝</div>
+        <div class="fc-label">Word</div>
+      </div>
+      <div class="floating-card fc-4">
+        <div class="fc-icon">📊</div>
+        <div class="fc-label">PPT</div>
+      </div>
+      <div class="orbit-ring"></div>
+    </div>
+  </section>
+
+  <!-- Category Tabs + Tools Grid -->
+  <section class="tools-section" id="tools">
+    <div class="section-header">
+      <h2 class="section-title">All <span class="gradient-text">Tools</span></h2>
+      <p class="section-subtitle">Click any tool to start converting — it's instant and free</p>
+    </div>
+    
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-category="all">All Tools</button>
+      <button class="cat-tab" data-category="converter">Converters</button>
+      <button class="cat-tab" data-category="compress">Compress</button>
+      <button class="cat-tab" data-category="photo">Photo Tools</button>
+    </div>
+
+    <div class="tools-grid" id="tools-grid">
+      <!-- Tool cards rendered by JS -->
+    </div>
+  </section>
+
+  <!-- Tool Processing Panel (Full-screen overlay) -->
+  <div class="tool-panel" id="tool-panel">
+    <div class="tool-panel-inner">
+      <div class="tool-panel-header">
+        <button class="back-btn" id="back-btn" aria-label="Go back">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span>Back to Tools</span>
+        </button>
+        <h2 class="tool-panel-title" id="tool-panel-title"></h2>
+        <p class="tool-panel-desc" id="tool-panel-desc"></p>
+      </div>
+      
+      <div class="tool-panel-body" id="tool-panel-body">
+        <!-- Dropzone -->
+        <div class="dropzone" id="dropzone">
+          <div class="dropzone-content">
+            <div class="dropzone-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+            </div>
+            <p class="dropzone-title">Drop your files here</p>
+            <p class="dropzone-hint">or <span class="dropzone-browse">browse</span> to upload</p>
+            <p class="dropzone-formats" id="dropzone-formats"></p>
+          </div>
+          <input type="file" id="file-input" class="file-input" />
+        </div>
+
+        <!-- File List -->
+        <div class="file-list" id="file-list" style="display:none;"></div>
+
+        <!-- Tool Options -->
+        <div class="tool-options" id="tool-options" style="display:none;"></div>
+
+        <!-- Process Button -->
+        <button class="process-btn" id="process-btn" style="display:none;">
+          <span class="process-btn-text">Convert Now</span>
+          <div class="process-btn-loader"></div>
+        </button>
+
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container" style="display:none;">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+            <div class="progress-shimmer"></div>
+          </div>
+          <p class="progress-text" id="progress-text">Processing...</p>
+        </div>
+
+        <!-- Result Preview -->
+        <div class="result-container" id="result-container" style="display:none;">
+          <div class="result-preview" id="result-preview"></div>
+          <button class="download-btn" id="download-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download</span>
+          </button>
+        </div>
+
+        <!-- Crop Canvas (for image crop tool) -->
+        <div class="crop-workspace" id="crop-workspace" style="display:none;">
+          <canvas id="crop-canvas"></canvas>
+          <div class="crop-controls" id="crop-controls"></div>
+        </div>
+
+        <!-- Passport Photo Preview -->
+        <div class="passport-workspace" id="passport-workspace" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+    <div class="faq-grid">
+      <details class="faq-item" id="faq-1">
+        <summary class="faq-question">Is ConvertHub really free?</summary>
+        <p class="faq-answer">Yes! ConvertHub is 100% free with no hidden charges. There are no watermarks on your output files, and you don't need to create an account. All processing happens directly in your browser.</p>
+      </details>
+      <details class="faq-item" id="faq-2">
+        <summary class="faq-question">Are my files safe?</summary>
+        <p class="faq-answer">Absolutely. Your files never leave your device. All conversion and processing happens entirely in your browser using JavaScript. We don't upload or store any of your files on any server.</p>
+      </details>
+      <details class="faq-item" id="faq-3">
+        <summary class="faq-question">What file formats are supported?</summary>
+        <p class="faq-answer">ConvertHub supports JPG, PNG, WebP, BMP, GIF images, PDF documents, DOCX (Word) files, and PPTX (PowerPoint) files. You can convert between these formats, compress them, or edit images with our photo tools.</p>
+      </details>
+      <details class="faq-item" id="faq-4">
+        <summary class="faq-question">How do I compress a PDF to a specific size?</summary>
+        <p class="faq-answer">Open the PDF Compress tool, upload your PDF, and select your target file size (100KB, 200KB, 500KB, 1MB, or enter a custom size). ConvertHub will optimize the PDF to meet your target size while maintaining the best possible quality.</p>
+      </details>
+      <details class="faq-item" id="faq-5">
+        <summary class="faq-question">Can I create passport photos for any country?</summary>
+        <p class="faq-answer">Yes! Our Passport Photo Maker supports standard sizes for most countries including US (2×2 inches), UK/EU (35×45mm), India (2×2 inches), and more. You can also enter custom dimensions.</p>
+      </details>
+      <details class="faq-item" id="faq-6">
+        <summary class="faq-question">Is there a file size limit?</summary>
+        <p class="faq-answer">Since all processing happens in your browser, the limit depends on your device's available memory. Most modern devices can handle files up to 100MB without issues. For very large files, we recommend processing them in batches.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="footer-logo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="url(#logoGrad)" stroke-width="2" fill="none" opacity="0.5"/>
+          <path d="M14 16l6-6 6 6" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+          <path d="M20 10v14" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          <path d="M26 24l-6 6-6-6" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+        </svg>
+        <span class="footer-name">ConvertHub</span>
+      </div>
+      <p class="footer-copy">Free online file converter & image toolkit. No watermarks. No signup. 100% browser-based.</p>
+      <div class="footer-links">
+        <span>© 2025 ConvertHub. All tools are free to use.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
